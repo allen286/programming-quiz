@@ -4,6 +4,20 @@
  * @return int number or NaN
  */
 
+const numMap = {
+    '0': 0,
+    '1': 1,
+    '2': 2,
+    '3': 3,
+    '4': 4,
+    '5': 5,
+    '6': 6,
+    '7': 7,
+    '8': 8,
+    '8': 8,
+    '9': 9,
+};
+
 function str2int(str) {
     if (typeof str === 'number') {
         let temp = str + '';
@@ -14,35 +28,25 @@ function str2int(str) {
         }
     }
     if (typeof str !== 'string') return NaN;
+    if (!/[0-9]/.test(str[0])) return NaN;
 
-    let result = 0;
-    let index = -1;
-    for (let i = 0; i < str.length; i++) {
+    let index, result = 0;
+    for (let i = 1; i < str.length; i++) {
         if (!/[0-9]/.test(str[i])) {
             index = i;
             break;
         }
     }
-    if (index === 0) return NaN;
 
-    str = str.slice(0, index);
-    const numMap = {
-        '0': 0,
-        '1': 1,
-        '2': 2,
-        '3': 3,
-        '4': 4,
-        '5': 5,
-        '6': 6,
-        '7': 7,
-        '8': 8,
-        '8': 8,
-        '9': 9,
-    };
+    str = str.slice(0, index); // 全是数字时index值为undefined，即从头截取到尾
 
     for (let i = 0; i < str.length; i++) {
-        result += str[i] * Math.pow(10, str.length - i - 1)
+        result += numMap[str[i]] * Math.pow(10, str.length - i - 1); // 题目允许使用乘法运算及幂函数吗？
     }
 
     return result;
 }
+
+// 测试
+let test = ['123fdvcx', '0342er', '.2', '666', '2', '0', 0.2, 2343, 'wweqrw', [], {}, true];
+console.log(test.map(str => str2int(str)));
