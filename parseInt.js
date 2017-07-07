@@ -1,5 +1,5 @@
 /**
- * str2int 模拟parseInt函数
+ * str2int 模拟parseInt函数，目前只支持10进制，TODO:parseInt(string, radix)，支持指定进制参数radix
  * @param  str 
  * @return int number or NaN
  */
