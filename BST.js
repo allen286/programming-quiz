@@ -74,7 +74,7 @@ function postOrder(node, callback) {
     }
 }
 
-// 测试
+// VSCode debugger node.js环境下测试
 let testArray = [12, 43, 8, 5, 90, 232, 0, -8, 666];
 let BSTree = binarySearchTree(testArray);
 console.log('Binary Search Tree: ', BSTree);
@@ -104,3 +104,12 @@ postOrder(BSTree, save2arr.bind(postArr));
 console.log('inOrder: ', inArr);
 console.log('preOrder: ', preArr);
 console.log('postOrder: ', postArr);
+
+// 模块导出，方便invertTree模块依赖测试
+module.exports.createTree =  binarySearchTree;
+module.exports.testTree =  BSTree;
+module.exports.inOrderTraversal = function(tree) {
+    let arr = [];
+    inOrder(tree, save2arr.bind(arr));
+    console.log(arr);
+};
