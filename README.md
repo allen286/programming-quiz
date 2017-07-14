@@ -7,4 +7,4 @@
 4、[深拷贝](https://github.com/allen286/programming-quiz/blob/master/deepClone.js)  
 5、[数组生成二叉搜索树](https://github.com/allen286/programming-quiz/blob/master/BST.js)  
 6、[翻转二叉树](https://github.com/allen286/programming-quiz/blob/master/invertTree.js)  
-7、[函数柯里化](https://github.com/allen286/programming-quiz/blob/master/curry.js)  
+7、[函数式编程及函数柯里化](https://github.com/allen286/programming-quiz/blob/master/curry.js)  
