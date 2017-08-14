@@ -12,11 +12,10 @@ function add(a, b) {
 
   let result = [];
   let count = 0;
-  let tmp = 0;
 
   for (let i = 1; i <= a.length || i <= b.length || count; i++) {
     // 利用~~取整，~~undefined===0
-    temp = ~~a[a.length - i] + ~~b[b.length - i] + count;
+    let temp = ~~a[a.length - i] + ~~b[b.length - i] + count;
     count = temp >= 10;
     result.unshift(temp % 10);
   }
