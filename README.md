@@ -11,3 +11,4 @@
 8、[求最长连续公共子串长度](https://github.com/allen286/programming-quiz/blob/master/subString.js)  
 9、[求连续子数组最大和](https://github.com/allen286/programming-quiz/blob/master/subArray.js)  
 10、[比较两对象是否相等](https://github.com/allen286/programming-quiz/blob/master/diff.js)  
+11、[实现大整数相加](https://github.com/allen286/programming-quiz/blob/master/bigIntAdd.js)  
