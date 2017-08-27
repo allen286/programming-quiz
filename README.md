@@ -7,6 +7,7 @@
 3、[交换两变量的值](https://github.com/allen286/programming-quiz/blob/master/common/exchange.js)    
 4、[函数柯里化](https://github.com/allen286/programming-quiz/blob/master/common/curry.js)  
 5、[去抖与节流](https://github.com/allen286/programming-quiz/blob/master/common/debounce&throttle.js)  
+6、[实现自定义事件](https://github.com/allen286/programming-quiz/blob/master/common/event.js)  
 
 ### 算法题  
 1、[判断字符串是否回文](https://github.com/allen286/programming-quiz/blob/master/algorithm/palindrome.js)  
